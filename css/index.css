@@ -6,7 +6,7 @@
   src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
 }
 section {
-  padding: 32px 0;
+  padding: 64px 0;
 }
 .container {
   max-width: 1000px;
@@ -89,6 +89,31 @@ header .hero h2 {
 header .hero img {
   height: 40px;
 }
+.about h2 {
+  text-align: center;
+  margin: 0 0 64px 0;
+}
+.about .about-item {
+  display: flex;
+  align-items: center;
+}
+.about .about-item * {
+  margin: 0;
+  padding: 0;
+}
+.about .about-item p {
+  padding: 16px;
+}
 .about .about-item img {
   width: 50%;
+}
+.about .about-item:last-child {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.about .about-item:last-child ul {
+  margin: 0 auto;
+}
+.download img {
+  width: 25%;
 }
