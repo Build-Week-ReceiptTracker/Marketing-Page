@@ -1,25 +1,45 @@
 header {
   nav {
-    .flex-item(space-between, center);
+    * {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    display: flex;
+    align-items: baseline;
+    padding: 32px 64px;
+
+    .box {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-logo {
+      display: flex;
+      justify-content: flex-start;
+
+      h1 {
+        display: inline-block;
+      }
+    }
 
     ul {
       list-style-type: none;
-      padding: 0;
-    }
 
-    li {
-      display: inline-block;
-      margin: 0 8px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #ddd;
+      li {
+        margin: 0 16px;
+      }
     }
 
     .login {
-      a:nth-child(2) {
-        margin-left: 16px;
+      display: flex;
+      justify-content: flex-end;
+
+      a:last-child {
+        margin-left: 32px;
       }
     }
   }

@@ -16,30 +16,47 @@ html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
   text-rendering: optimizeLegibility;
+  box-sizing: border-box;
   color: #999;
 }
-html body {
+body {
   font-size: 2rem;
 }
 header nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  padding: 32px 64px;
+}
+header nav * {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+}
+header nav .box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+header nav .nav-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+header nav .nav-logo h1 {
+  display: inline-block;
 }
 header nav ul {
   list-style-type: none;
-  padding: 0;
 }
-header nav li {
-  display: inline-block;
-  margin: 0 8px;
+header nav ul li {
+  margin: 0 16px;
 }
-header nav a {
-  text-decoration: none;
-  color: #ddd;
+header nav .login {
+  display: flex;
+  justify-content: flex-end;
 }
-header nav .login a:nth-child(2) {
-  margin-left: 16px;
+header nav .login a:last-child {
+  margin-left: 32px;
 }
 header {
   background: url(../img/hero.jpg) no-repeat center center fixed;
@@ -48,13 +65,19 @@ header {
   -o-background-size: cover;
   background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: auto;
+  position: relative;
 }
 header .hero {
+  margin-top: -110px;
   height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+header .hero * {
+  color: #fff;
 }
 header .hero h1 {
   font-size: 7rem;
@@ -65,4 +88,7 @@ header .hero h2 {
 }
 header .hero img {
   height: 40px;
+}
+.about .about-item img {
+  width: 50%;
 }
