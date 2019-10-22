@@ -15,7 +15,54 @@ section {
 html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #999;
 }
 html body {
   font-size: 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+header nav li {
+  display: inline-block;
+  margin: 0 8px;
+}
+header nav a {
+  text-decoration: none;
+  color: #ddd;
+}
+header nav .login a:nth-child(2) {
+  margin-left: 16px;
+}
+header {
+  background: url(../img/hero.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+header .hero {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+header .hero h1 {
+  font-size: 7rem;
+  margin: 0;
+}
+header .hero h2 {
+  margin-top: 0;
+}
+header .hero img {
+  height: 40px;
 }
