@@ -146,11 +146,22 @@ header .hero h2 {
 .download .iphone img {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .download .iphone {
+    display: none;
+  }
+}
 .download .download-app {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  .download .download-app {
+    width: 100%;
+    align-items: center;
+  }
 }
 footer {
   background: #999;
