@@ -105,8 +105,19 @@ header .hero h2 {
 .about .about-item p {
   padding: 16px;
 }
+@media (max-width: 500px) {
+  .about .about-item p {
+    padding: 10%;
+    text-align: center;
+  }
+}
 .about .about-item img {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .about .about-item {
+    flex-direction: column-reverse;
+  }
 }
 .about .about-item:last-child {
   flex-direction: row-reverse;
@@ -114,6 +125,11 @@ header .hero h2 {
 }
 .about .about-item:last-child ul {
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .about .about-item:last-child {
+    flex-direction: column-reverse;
+  }
 }
 .download {
   background: #fafafa;
