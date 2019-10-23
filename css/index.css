@@ -136,6 +136,37 @@ header .hero h2 {
   flex-direction: column;
   justify-content: center;
 }
+footer {
+  background: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer * {
+  color: #fff;
+}
+footer nav {
+  padding: 16px;
+}
+footer nav * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+footer nav ul {
+  list-style-type: none;
+}
+footer nav ul li {
+  margin: 0 8px;
+  display: inline-block;
+}
+footer ion-icon {
+  color: #fff;
+  font-size: 3rem;
+}
+footer small {
+  padding: 16px;
+}
 .teamHeader {
   max-height: 75vh;
 }
