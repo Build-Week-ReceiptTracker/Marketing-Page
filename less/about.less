@@ -1,0 +1,45 @@
+.about {
+  h2 {
+    text-align: center;
+    margin: 0 0 64px 0;
+  }
+
+  .about-item {
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    display: flex;
+    align-items: center;
+
+    p {
+      padding: 16px;
+      @media @max500 {
+        padding: 10%;
+        text-align: center;
+      }
+    }
+
+    img {
+      width: 50%;
+    }
+
+    @media @max500 {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .about-item:last-child {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    ul {
+      margin: 0 auto;
+    }
+
+    @media @max500 {
+      flex-direction: column-reverse;
+    }
+  }
+}

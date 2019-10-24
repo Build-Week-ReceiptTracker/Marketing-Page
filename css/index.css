@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'), url(https://fonts.gstatic.com/s/nunitosans/v5/pe0qMImSLYBIv1o4X1M8cce9I94.ttf) format('truetype');
+}
+section {
+  padding: 64px 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  color: #999;
+}
+body {
+  font-size: 2rem;
+}
+.app-badge img {
+  height: 40px;
+}
+header nav {
+  display: flex;
+  align-items: baseline;
+  padding: 32px 64px;
+}
+header nav * {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-decoration: none;
+}
+header nav .box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+header nav .nav-logo {
+  display: flex;
+  justify-content: flex-start;
+}
+header nav .nav-logo h1 {
+  display: inline-block;
+  font-size: 3rem;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  margin: 0 8px;
+}
+header nav .login {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav .login a:last-child {
+  margin-left: 32px;
+}
+header {
+  background: url(../img/hero.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  position: relative;
+}
+header .hero {
+  margin-top: -110px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header .hero * {
+  color: #fff;
+}
+header .hero h1 {
+  font-size: 7rem;
+  margin: 0;
+}
+header .hero h2 {
+  margin-top: 0;
+}
+.about h2 {
+  text-align: center;
+  margin: 0 0 64px 0;
+}
+.about .about-item {
+  display: flex;
+  align-items: center;
+}
+.about .about-item * {
+  margin: 0;
+  padding: 0;
+}
+.about .about-item p {
+  padding: 16px;
+}
+@media (max-width: 500px) {
+  .about .about-item p {
+    padding: 10%;
+    text-align: center;
+  }
+}
+.about .about-item img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .about .about-item {
+    flex-direction: column-reverse;
+  }
+}
+.about .about-item:last-child {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.about .about-item:last-child ul {
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .about .about-item:last-child {
+    flex-direction: column-reverse;
+  }
+}
+.download {
+  background: #fafafa;
+}
+.download .container {
+  display: flex;
+}
+.download .iphone {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.download .iphone img {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .download .iphone {
+    display: none;
+  }
+}
+.download .download-app {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .download .download-app {
+    width: 100%;
+    align-items: center;
+  }
+}
+footer {
+  background: #999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer * {
+  color: #fff;
+}
+footer nav {
+  padding: 16px;
+}
+footer nav * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+footer nav ul {
+  list-style-type: none;
+}
+footer nav ul li {
+  margin: 0 8px;
+  display: inline-block;
+}
+footer ion-icon {
+  color: #fff;
+  font-size: 3rem;
+}
+footer small {
+  padding: 16px;
+}
+.teamHeader {
+  max-height: 75vh;
+}
+.teamSection {
+  text-align: center;
+}
+.teamSection h2 {
+  margin-bottom: 5%;
+}
+.teamWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 10%;
+}
+.teamWrapper img {
+  border-radius: 50%;
+}
