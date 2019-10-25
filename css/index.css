@@ -12,6 +12,10 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   font-size: 62.5%;
   font-family: "Nunito Sans", sans-serif;
@@ -36,18 +40,40 @@ header nav * {
   color: #fff;
   text-decoration: none;
 }
+@media (max-width: 900px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header nav .box {
   flex: 1;
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  header nav .box {
+    width: 100%;
+  }
+}
 header nav .nav-logo {
   display: flex;
   justify-content: flex-start;
 }
+@media (max-width: 500px) {
+  header nav .nav-logo {
+    justify-content: center;
+  }
+}
 header nav .nav-logo h1 {
   display: inline-block;
   font-size: 3rem;
+}
+@media (max-width: 900px) {
+  header nav .nav-logo h1 {
+    margin-bottom: 32px;
+    text-align: center;
+  }
 }
 header nav ul {
   list-style-type: none;
@@ -55,9 +81,24 @@ header nav ul {
 header nav ul li {
   margin: 0 8px;
 }
+@media (max-width: 600px) {
+  header nav ul li {
+    padding: 8px 0;
+  }
+}
+@media (max-width: 900px) {
+  header nav ul {
+    margin-bottom: 32px;
+  }
+}
 header nav .login {
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  header nav .login {
+    justify-content: center;
+  }
 }
 header nav .login a:last-child {
   margin-left: 32px;
@@ -70,7 +111,12 @@ header {
   background-size: cover;
   height: 100vh;
   width: auto;
-  position: relative;
+  padding-bottom: 64px;
+}
+@media (max-width: 500px) {
+  header {
+    height: 120vh;
+  }
 }
 header .hero {
   margin-top: -110px;
@@ -83,9 +129,30 @@ header .hero {
 header .hero * {
   color: #fff;
 }
+header .hero br {
+  display: none;
+}
+@media (max-width: 900px) {
+  header .hero br {
+    display: inline;
+  }
+}
+@media (max-width: 900px) {
+  header .hero {
+    margin-top: 300px;
+    font-size: 1.5rem;
+    justify-content: flex-start;
+  }
+}
 header .hero h1 {
   font-size: 7rem;
   margin: 0;
+}
+@media (max-width: 900px) {
+  header .hero h1 {
+    margin-top: -208px;
+    font-size: 5rem;
+  }
 }
 header .hero h2 {
   margin-top: 0;
@@ -93,6 +160,14 @@ header .hero h2 {
 .about h2 {
   text-align: center;
   margin: 0 0 64px 0;
+}
+.about br {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about br {
+    display: inline;
+  }
 }
 .about .about-item {
   display: flex;
@@ -102,34 +177,33 @@ header .hero h2 {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 600px) {
+  .about .about-item {
+    flex-direction: column;
+  }
+}
 .about .about-item p {
   padding: 16px;
-}
-@media (max-width: 500px) {
-  .about .about-item p {
-    padding: 10%;
-    text-align: center;
-  }
 }
 .about .about-item img {
   width: 50%;
 }
-@media (max-width: 500px) {
-  .about .about-item {
-    flex-direction: column-reverse;
+@media (max-width: 600px) {
+  .about .about-item img {
+    width: 100%;
   }
 }
 .about .about-item:last-child {
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+@media (max-width: 600px) {
+  .about .about-item:last-child {
+    flex-direction: column;
+  }
+}
 .about .about-item:last-child ul {
   margin: 0 auto;
-}
-@media (max-width: 500px) {
-  .about .about-item:last-child {
-    flex-direction: column-reverse;
-  }
 }
 .download {
   background: #fafafa;
@@ -137,19 +211,24 @@ header .hero h2 {
 .download .container {
   display: flex;
 }
+@media (max-width: 600px) {
+  .download .container {
+    flex-direction: column;
+  }
+}
 .download .iphone {
   width: 50%;
   display: flex;
   justify-content: center;
   align-content: center;
 }
+@media (max-width: 600px) {
+  .download .iphone {
+    width: 100%;
+  }
+}
 .download .iphone img {
   width: 50%;
-}
-@media (max-width: 500px) {
-  .download .iphone {
-    display: none;
-  }
 }
 .download .download-app {
   width: 50%;
@@ -157,10 +236,11 @@ header .hero h2 {
   flex-direction: column;
   justify-content: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .download .download-app {
     width: 100%;
     align-items: center;
+    text-align: center;
   }
 }
 footer {
@@ -183,9 +263,21 @@ footer nav * {
 footer nav ul {
   list-style-type: none;
 }
+@media (max-width: 500px) {
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 footer nav ul li {
   margin: 0 8px;
   display: inline-block;
+}
+@media (max-width: 500px) {
+  footer nav ul li {
+    padding: 8px 0;
+  }
 }
 footer ion-icon {
   color: #fff;

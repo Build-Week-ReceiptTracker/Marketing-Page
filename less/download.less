@@ -2,6 +2,8 @@
   background: #fafafa;
   .container {
     display: flex;
+
+    .media-column();
   }
 
   .iphone {
@@ -10,12 +12,12 @@
     justify-content: center;
     align-content: center;
 
-    img {
-      width: 50%;
+    @media @max600 {
+      width: 100%;
     }
 
-    @media @max500 {
-      display: none;
+    img {
+      width: 50%;
     }
   }
 
@@ -25,9 +27,10 @@
     flex-direction: column;
     justify-content: center;
 
-    @media @max500 {
+    @media @max600 {
       width: 100%;
       align-items: center;
+      text-align: center;
     }
   }
 }

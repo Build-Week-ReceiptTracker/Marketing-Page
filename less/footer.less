@@ -20,9 +20,19 @@ footer {
     ul {
       list-style-type: none;
 
+      @media @max500 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+
       li {
         margin: 0 8px;
         display: inline-block;
+
+        @media @max500 {
+          padding: 8px 0;
+        }
       }
     }
   }

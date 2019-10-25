@@ -11,19 +11,37 @@ header {
     align-items: baseline;
     padding: 32px 64px;
 
+    @media @max900 {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .box {
       flex: 1;
       display: flex;
       justify-content: center;
+
+      @media @max500 {
+        width: 100%;
+      }
     }
 
     .nav-logo {
       display: flex;
       justify-content: flex-start;
 
+      @media @max500 {
+        justify-content: center;
+      }
+
       h1 {
         display: inline-block;
         font-size: 3rem;
+
+        @media @max900 {
+          margin-bottom: 32px;
+          text-align: center;
+        }
       }
     }
 
@@ -32,12 +50,24 @@ header {
 
       li {
         margin: 0 8px;
+
+        @media @max600 {
+          padding: 8px 0;
+        }
+      }
+
+      @media @max900 {
+        margin-bottom: 32px;
       }
     }
 
     .login {
       display: flex;
       justify-content: flex-end;
+
+      @media @max500 {
+        justify-content: center;
+      }
 
       a:last-child {
         margin-left: 32px;
