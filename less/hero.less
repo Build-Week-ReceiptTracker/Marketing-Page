@@ -7,7 +7,11 @@ header {
 
   height: 100vh;
   width: auto;
-  position: relative;
+  padding-bottom: 64px;
+
+  @media @max500 {
+    height: 120vh;
+  }
 
   .hero {
     * {
@@ -21,9 +25,28 @@ header {
     flex-direction: column;
     justify-content: center;
 
+    br {
+      display: none;
+
+      @media @max900 {
+        display: inline;
+      }
+    }
+
+    @media @max900 {
+      margin-top: 300px;
+      font-size: 1.5rem;
+      justify-content: flex-start;
+    }
+
     h1 {
       font-size: 7rem;
       margin: 0;
+
+      @media @max900 {
+        margin-top: -208px;
+        font-size: 5rem;
+      }
     }
 
     h2 {

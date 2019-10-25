@@ -4,6 +4,14 @@
     margin: 0 0 64px 0;
   }
 
+  br {
+    display: none;
+
+    @media @max500 {
+      display: inline;
+    }
+  }
+
   .about-item {
     * {
       margin: 0;
@@ -13,20 +21,18 @@
     display: flex;
     align-items: center;
 
+    .media-column();
+
     p {
       padding: 16px;
-      @media @max500 {
-        padding: 10%;
-        text-align: center;
-      }
     }
 
     img {
       width: 50%;
-    }
 
-    @media @max500 {
-      flex-direction: column-reverse;
+      @media @max600 {
+        width: 100%;
+      }
     }
   }
 
@@ -34,12 +40,10 @@
     flex-direction: row-reverse;
     justify-content: space-between;
 
+    .media-column();
+
     ul {
       margin: 0 auto;
-    }
-
-    @media @max500 {
-      flex-direction: column-reverse;
     }
   }
 }
